@@ -1,0 +1,21 @@
+public class Lamayon4 {
+    public static void main(String[] args) {
+        int[] numbers = {15, 22, 3, 45, 7, 18, 0, -5, 10, 8};
+
+        
+        int lessthan = numbers[0];
+        int Morethan = numbers[0];
+
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] < lessthan) {
+                lessthan = numbers[i];
+            }
+            if (numbers[i] > Morethan) {
+                Morethan = numbers[i]; 
+            }
+        }
+
+        System.out.println("Smallest number: " + lessthan);
+        System.out.println("Largest number: " + Morethan);
+    }
+}
